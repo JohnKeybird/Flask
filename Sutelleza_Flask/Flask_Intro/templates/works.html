@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to my Programs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('{{ url_for('static', filename='images/20231111_125424_0000.jpg') }}');
+            background-size: cover; 
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .button-container {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px; 
+            padding: 20px; 
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        li {
+            padding: 15px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #55a6e2;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <ul>
+            <li><a href="/touppercase">To Upper Case</a></li>
+            <li><a href="/areaOfCircle">Area of a Circle</a></li>
+            <li><a href="/areaOfTriangle">Area of a Triangle</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+

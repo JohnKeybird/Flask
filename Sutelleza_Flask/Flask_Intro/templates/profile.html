@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" initial-scale=1.0>
+    <title>Profile Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100%;
+            min-height: 100vh;
+            background-color: #212121;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-card{
+            width: 90%;
+            max-width: 450px;
+            text-align: center;
+            background: #fff;
+            color: #333;
+
+        }
+
+        .cover-pic{
+            display: block;
+            width: 100%;
+        }
+
+        .profile-pic{
+            width: 140px;
+            border-radius: 50%;
+            margin-top: -70px;
+            box-shadow: 0 0 0 0px #ff004f;
+            transition: box-shadow 0.5s;
+
+        }
+
+        .profile-pic:hover{
+            box-shadow: 0 0 0 5px #ff004f;
+        }
+
+        .profile-card h1{
+            font-weight: 600;
+        }
+
+        .follow-btn{
+            display: inline-block;
+            text-decoration: none;
+            border: 1px solid #ff004f;
+            color: #555;
+            padding: 6px 35px;
+            margin: 25px 0;
+        }
+
+        .row{
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .row h2{
+            font-weight: 500;
+            font-size: 30;
+        }
+
+        .view-btn{
+            display: inline-block;
+            text-decoration: none;
+            background: #ff004f;
+            color: #fff;
+            width: 100%;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <img src="static\images\received_573386854419435.jpeg" class="cover-pic" style="height: 300px; width: 100%">
+            <img src="static\images\1686791651873.jpg" class="profile-pic" style="height: 20px width: 55%">
+            <h1>John Keybird M. Sutelleza</h1>
+            <p>A Computer Engineering student at</p>
+            <p>Polytechnic University of the Philippines</p>
+            <p>Also part of PUP Varsity Arnis Team </p>
+            <a href="#" class="follow-btn">Follow</a>
+            <div class="row">
+                <div>
+                    <p>Followers</p>
+                    <h2>5.55M</h2>
+                </div>
+                <div>
+                    <p>Following</p>
+                    <h2>1202</h2>
+                </div>
+                <div>
+                    <p>Videos</p>
+                    <h2>23</h2>
+                </div>
+            </div>
+            <a href="#" class="view-btn">Welcome to my Profile</a>
+        </div>
+    </div>
+</body>
+</html>
